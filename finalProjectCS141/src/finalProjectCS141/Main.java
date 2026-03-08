@@ -45,9 +45,9 @@ public class Main {
 			// Different functionalities depending on user input
 			
 			switch(userInput) {
-				case 0:
+				//case 0:
 					// add a feature
-					break;
+				//	break;
 				
 				case 1:
 					// add a feature
@@ -60,16 +60,12 @@ public class Main {
 				case 3:
 					// add a feature
 					break;
-					
-				case 4:
-					// add a feature
-					break;
 				
-				case 5:
+				case 4:
 					joinGroup();
 					break;
 					
-				case 6:
+				case 5:
 					// Main loop ends
 					break;
 					
@@ -91,12 +87,11 @@ public class Main {
 		
 		// Currently hardcoded, there is probably a better solution
 		System.out.println("""
-				1. feature 1
-				2. feature 2
-				3. feature 3
-				4. feature 4
-				5. Join a Local Group
-				6. Exit
+				1. View information on recycling programs
+				2. Create/Edit Recycle Log
+				3. Recycling Calculator
+				4. Join a Local Group
+				5. Exit
 				""");
 	}
 	
