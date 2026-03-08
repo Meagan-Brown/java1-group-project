@@ -3,11 +3,13 @@ package finalProjectCS141;
 import java.util.Scanner;
 
 public class RecyclingCalculator {
+		public static String divider = "-------------------";
 
 	    public static void main(String[] args) {
 
 	        Scanner scanner = new Scanner(System.in);
 
+			System.out.println("Recycling Calculator\n" + divider);
 	        System.out.print("How many grams of paper recycled per day? ");
 	        double paper = scanner.nextInt();
 	        paper = paper / 1000; // Convert g to kg
@@ -26,7 +28,7 @@ public class RecyclingCalculator {
 
 	        double carbonSaved = paper * 0.46 + plastics * 1.7 + metal * 4 + glass * 0.3;
 
-	        System.out.println("Estimated CO2 saved per day: " + carbonSaved + " kg. \n Returning to main menu.");
+	        System.out.println(divider + "\nEstimated CO2 saved per day: " + carbonSaved + " kg." + divider + " \nReturning to main menu.");
 
 	    }
 	}
