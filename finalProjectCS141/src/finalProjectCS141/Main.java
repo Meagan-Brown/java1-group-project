@@ -82,7 +82,7 @@ public class Main {
 		
 		// Currently hardcoded, there is probably a better solution
 		System.out.println("""
-				1. Add Material
+				1. Add Material to Recycle Log
 				2. Create/Edit Recycle Log
 				3. View Recycle Log
 				4. Recycling Calculator
