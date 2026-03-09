@@ -3,15 +3,30 @@
 import java.util.Scanner;
 
 public class RecyclingCalculator {
+		public static String divider = "-------------------";
+
 	    public static void run(Scanner scanner) {
-			RecycleLog recycleLog = new RecycleLog();
 
-			for(int i = 0; i < recycleLog.getSize(); i++) {
-				System.out.println("How many grams of " + recycleLog.getMaterial(i).getName() + " recycled per day? ");
-	        	recycleLog.addWeight(i, scanner.nextDouble());
-			}
+	        System.out.println("How many grams of paper recycled per day? ");
+	        double paper = scanner.nextDouble();
 
-	        System.out.println(Main.divider + "\nEstimated CO2 saved per day: " + recycleLog.getCarbonSaved() + " kg.\n" + Main.divider + " \nReturning to main menu.");
+	        paper = paper / 1000; // Convert g to kg
+	        
+	        System.out.println("How many grams of plastic recycled per day? ");
+	        double plastics = scanner.nextDouble();
+	        plastics = plastics / 1000; // Convert g to kg
+	        
+	        System.out.println("How many grams of metal recycled per day? ");
+	        double metal = scanner.nextDouble();
+	        metal = metal / 1000; // Convert g to kg
+	        
+	        System.out.println("How many grams of glass recycled per day? ");
+	        double glass = scanner.nextDouble();
+	        glass = glass / 1000; // Convert g to kg
+
+	        double carbonSaved = paper * 0.46 + plastics * 1.7 + metal * 4 + glass * 0.3;
+
+	        System.out.println(divider + "\nEstimated CO2 saved per day: " + carbonSaved + " kg." + divider + " \nReturning to main menu.");
 
 	    }
 	}

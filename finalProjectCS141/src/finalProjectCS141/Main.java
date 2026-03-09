@@ -27,7 +27,7 @@ public class Main {
 		
 		// Main loop
 		
-		while(userInput != 6) {
+		while(userInput != 5) {
 			mainMenu();
 			
 			// Gets user input
@@ -39,6 +39,10 @@ public class Main {
 			// Different functionalities depending on user input
 			
 			switch(userInput) {
+				//case 0:
+					// add a feature
+				//	break;
+				
 				case 1:
 					// feature: info on general recycling practices (should I call a class/method or just use println here?)
 					
@@ -47,16 +51,16 @@ public class Main {
 				case 2:
 					// feature: Recycling log
 					break;
-
+					
 				case 3:
 					// add a feature
 					break;
 				
-				case 5:
+				case 4:
 					joinGroup();
 					break;
 					
-				case 6:
+				case 5:
 					// Main loop ends
 					break;
 					
@@ -78,12 +82,11 @@ public class Main {
 		
 		// Currently hardcoded, there is probably a better solution
 		System.out.println("""
-				1. Add Material
+				1. View information on recycling programs
 				2. Create/Edit Recycle Log
-				3. View Recycle Log
-				4. Recycling Calculator
-				5. Join a Local Group
-				6. Exit
+				3. Recycling Calculator
+				4. Join a Local Group
+				5. Exit
 				""");
 	}
 	
