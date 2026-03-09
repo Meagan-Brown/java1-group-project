@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class RecyclingCalculator {
 	    public static void run(Scanner scanner) {
 			RecycleLog recycleLog = new RecycleLog();
-
+			
+			//loops through all recyclable materials and asks user for how many grams recycled per day
 			for(int i = 0; i < recycleLog.getSize(); i++) {
 				System.out.println("How many grams of " + recycleLog.getMaterial(i).getName() + " recycled per day? ");
 	        	recycleLog.addWeight(i, scanner.nextDouble());
