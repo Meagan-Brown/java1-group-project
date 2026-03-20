@@ -39,7 +39,6 @@ public class Main {
 			
 			switch(userInput) {
 				case 1:
-					// feature: info on general recycling practices (should I call a class/method or just use println here?)
 					RecycleLogEditor.addMaterial(scanner);
 					break;
 					
@@ -53,8 +52,8 @@ public class Main {
 					break;
 
 				case 4:
-					 RecyclingCalculator.run(scanner);
-				break;
+					RecyclingCalculator.run(scanner);
+					break;
 				
 				case 5:
 					joinGroup();
